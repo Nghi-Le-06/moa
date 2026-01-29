@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sen gửi Moa 💖</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #1b1b3a, #0f0f1a);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffeef4;
+}
+
+/* Màn hình chạm */
+#startScreen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, #1b1b3a, #0f0f1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    text-align: center;
+}
+
+#startScreen h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#startScreen p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Trái tim */
+.heart {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #ff6b9d;
+    transform: rotate(45deg);
+    animation: floatUp 7s linear infinite;
+    opacity: 0.7;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #ff6b9d;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -7px;
+    left: 0;
+}
+
+.heart::after {
+    left: -7px;
+    top: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Thư */
+.letter {
+    width: 92%;
+    max-width: 420px;
+    height: 85vh;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 24px 22px;
+    border-radius: 22px;
+    font-size: 16.5px;
+    line-height: 1.8;
+    overflow-y: auto;
+    display: none;
+    animation: fadeIn 2.5s ease forwards;
+    box-shadow: 0 0 35px rgba(255, 107, 157, 0.25);
+}
+
+/* Cuộn mượt */
+.letter::-webkit-scrollbar {
+    width: 4px;
+}
+.letter::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signature {
+    margin-top: 24px;
+    text-align: right;
+    font-style: italic;
+    color: #ffb3c8;
+    font-size: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="startScreen" onclick="startLove()">
+    <h1>💗 Sen gửi Moa 💗</h1>
+    <p>Chạm nhẹ để mở thư</p>
+</div>
+
+<div class="letter" id="letter">
+    Sen viết cho moa những dòng này bằng tất cả thương nhớ trong tim sen. 
+    Moa ơi, sen yêu moa nhiều lắm. Yêu theo cái cách mà mỗi sáng thức dậy, điều đầu tiên sen nghĩ đến là moa đang làm gì, có mệt không, có ăn uống đầy đủ không. 
+    Yêu đến mức chỉ cần nghĩ đến việc không được ở gần moa thôi là tim sen đã thấy trống trải rồi. 
+    Với sen, moa không chỉ là người sen thương, mà còn là nơi sen thấy an toàn, thấy được là chính mình.
+
+    <br><br>
+
+    Moa biết không, sen nhớ moa nhiều lắm. Nhớ từng giọng nói, từng ánh mắt, từng cái ôm rất chặt của moa.  
+    Những lúc sen ở xa, giữa bao nhiêu người, bao nhiêu việc, sen vẫn thấy thiếu thiếu một điều gì đó — và sen biết, đó là moa.  
+    Có những buổi tối sen nằm im, không làm gì cả, chỉ để nhớ moa thôi, nhớ đến mức tim sen mềm ra luôn.  
+    Và sen của moa yêu moa rất rất nhiều.
+
+    <br><br>
+
+    Mỗi ngày sen luôn cảm thấy biết ơn vì có moa bên cạnh, có moa để mình thêm động lực, thêm cố gắng để hoàn thành tốt tất cả mọi điều.  
+    Gửi moa của sen, dù moa có ra sao, tâm trạng moa có thể nào thì sen vẫn luôn ở đây, ở đây để yêu moa thật nhiều, thương moa thật lâu và nắm tay moa thật chặt.  
+    Sen không bao giờ để moa cô đơn, cảm thấy lạnh lẽo hay buồn chán.
+
+    <br><br>
+
+    Sen là sen của moa, sẵn sàng chia sẻ mọi khó khăn, nỗi buồn, niềm vui. Bất cứ khi nào cũng có sen bên cạnh.  
+    Cho sen thức cả đêm để canh giấc cho moa cũng được.  
+    Sen mong moa của sen luôn khỏe mạnh, vui vẻ, tươi cười, moa không cần là một phiên bản hoàn hảo của ai cả.  
+    Moa chỉ cần là moa, là người sen yêu nhất, là người sen muốn bảo vệ, che chở.
+
+    <br><br>
+
+    Nếu có đôi khi sen vụng về hay sen hư, thì moa cứ phạt sen nhá, không sao đâu ạ.  
+    Hoặc khum xì moa đừng giận bạn sen đáng yêu này, bạn sen nhẹ nhàng, tình cảm, hơi bướng thẹo nhưng rất yêu moa.  
+    Cảm ơn moa vì moa đã xuất hiện trong đời sen, không ồn ào, nhưng ở lại tim sen rất sâu, rất lâu.  
+
+    <br><br>
+
+    Sen yêu moaaaaa nhiều nhiều nhiều.  
+    Một ngày của sen nhìn moa cười không chán, ngắm moa mãi không rời, nói chuyện với moa cả ngày còn được.  
+    Sen thương moa. 💗
+
+    <div class="signature">— Sen của Moa</div>
+</div>
+
+<script>
+let heartInterval;
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = 5 + Math.random() * 4 + "s";
+    heart.style.transform = "scale(" + (0.5 + Math.random()) + ") rotate(45deg)";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 9000);
+}
+
+function startLove() {
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+    heartInterval = setInterval(createHeart, 450);
+}
+</script>
+
+</body>
+</html>
